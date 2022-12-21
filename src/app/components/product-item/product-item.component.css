@@ -19,3 +19,11 @@
     width: 108px; 
     margin-bottom: 8px;
   }
+
+  button {
+    width: 32%;
+    background: #33B5E5;
+    border-radius: 10px;
+    height: 40px;
+    color: #fff;
+  }

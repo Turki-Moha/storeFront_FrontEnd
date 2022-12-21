@@ -26,7 +26,7 @@ export class ProductItemDetailComponent implements OnInit{
   onAdd(product:Item,quantity:string){
     this.cartService.addItemToCart(product,+quantity)
     console.log(quantity)
-    alert('item added to cart!')
+    alert('item added to cart successfully!')
   }
 
 }

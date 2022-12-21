@@ -9,17 +9,15 @@ import { Item } from 'src/app/types';
 })
 export class ProductListComponent implements OnInit{
 
-  items:Item[];
+  itemList:Item[];
   constructor(private itemservice:ItemService) {}
 
   ngOnInit():void{
     this.itemservice.retriveItems().subscribe(res=>{
-      this.items = res
+      this.itemList = res
     })
   }
-
-  onAdd(event:any){
-    alert(`Item ${event.name} is added to the cart!`)
+  onAdd(e:any){
+    alert(`Item ${e.name} is added to the cart!`)
   }
-
 }

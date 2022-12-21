@@ -5,6 +5,8 @@ img {
   
   .form-margin {
     margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
   }
   
   .cart-item {
@@ -42,4 +44,11 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 64px;
+  }
+  
+  button {
+    background: #33B5E5;
+    border-radius: 10px;
+    height: 40px;
+    color: #fff;
   }

@@ -1,6 +1,5 @@
 <div class="product-container">
     <div class="product-index">
-        <!-- <app-items *ngFor="let item of items" [product]="item" (alertEvent)="onAdd($event)"></app-items> -->
-        <h1>عبد</h1>
+        <app-product-item *ngFor="let i of itemList" [item]="i" (alertEvent)="onAdd($event)"></app-product-item>
     </div>
 </div>

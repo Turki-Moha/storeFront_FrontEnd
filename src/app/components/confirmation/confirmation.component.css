@@ -18,3 +18,10 @@
   .confirmation-item {
     margin-bottom: 30px;
   }
+  
+  button {
+    background: #33B5E5;
+    border-radius: 10px;
+    height: 40px;
+    color: #fff;
+  }

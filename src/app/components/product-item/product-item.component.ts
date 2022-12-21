@@ -8,7 +8,7 @@ import { Item } from 'src/app/types';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent implements OnInit{
-  @Input() product:Item;
+  @Input() item:Item;
   @Output() alertEvent = new EventEmitter();
   constructor(private cartService:CartService){}
 
@@ -19,5 +19,4 @@ export class ProductItemComponent implements OnInit{
     this.cartService.addItemToCart(product,+quantity)
     this.alertEvent.emit(product)
   }
-
 }

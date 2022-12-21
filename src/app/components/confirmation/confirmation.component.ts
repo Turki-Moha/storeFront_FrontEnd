@@ -15,5 +15,4 @@ export class ConfirmationComponent implements OnInit{
     this.order = this.orderserviec.showOrder()
     console.log(this.order)
   }
-
 }

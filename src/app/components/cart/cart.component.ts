@@ -28,20 +28,20 @@ export class CartComponent implements OnInit{
     this.calcTotal()
   }
 
-  calcTotal(){
-    this.total = 0
-    this.cart.forEach(Item =>{
-      this.total += Item.item.price * Item.quantity
-    })
-    this.order.total = this.total
-  }
-
   updateShoppingCart(item:Cart){
     this.cartService.editItem(item)
     if(item.quantity === 0){
       this.cart = this.cartService.showCart()
       alert('Item removed from cart!')
     }
+  }
+
+  calcTotal(){
+    this.total = 0
+    this.cart.forEach(Item =>{
+      this.total =this.total+ Item.item.price * Item.quantity
+    })
+    this.order.total = this.total
   }
 
   OrderSubmission(){
